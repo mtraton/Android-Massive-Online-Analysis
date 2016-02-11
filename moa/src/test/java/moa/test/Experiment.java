@@ -1,10 +1,12 @@
 package moa.test;
 
-import moa.classifiers.trees.HoeffdingTree;
+
 import moa.classifiers.Classifier;
+import moa.classifiers.trees.HoeffdingTree;
 import moa.core.TimingUtils;
 import moa.streams.generators.RandomRBFGenerator;
 import weka.core.Instance;
+
 import java.io.IOException;
 
 
@@ -42,6 +44,6 @@ public class Experiment {
 
     public static void main(String[] args) throws IOException {
         Experiment exp = new Experiment();
-        exp.run(1000000, true);
+        exp.run(100, true);
     }
 }
